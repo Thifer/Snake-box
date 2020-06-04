@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-// using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -27,13 +25,12 @@ namespace Snake_box
         [SerializeField] private string _spawningEnemyDataPath;
         [SerializeField] private string _spikedEnemyDataPath;
         [SerializeField] private string _LevelDataPath;
-        [SerializeField] private string _borderDataPath;
         [SerializeField] private string _turretDataPath;
         [SerializeField] private string _shellDataPath;
-        //private static EnemySpawnData _enemySpawnData;  //кто тут последний шаманил?
-        //private static LevelSpawnData _levelSpawnData;  //если нужно - пофиксить ошибки, если нет удалите 
         [SerializeField] private string _blockSnakeDataPath;
+        [SerializeField] private string _bordersDataPath;
         [SerializeField] private string _allSpawnListsDataPath;
+        [SerializeField] private string _levelPrefabsDataPath;
         private static ShakesData _shake;
         private static CharacterData _characterData;
         private static SimpleEnemyData _simpleEnemyData;
@@ -48,7 +45,10 @@ namespace Snake_box
         private static LevelData _levelData;
         private static BlockSnakeData _blockSnake;
         private static TurretData _turretData;
+        private static BordersData _bordersData;
+        private static AllSpawnListsData _allSpawnListsData;
         private static ShellData _shellData;
+        private static LevelPrefabs _levelPrefabs;
         private static readonly Lazy<Data> _instance = new Lazy<Data>(() => Load<Data>("Data/" + typeof(Data).Name));
         
         #endregion
@@ -240,6 +240,16 @@ namespace Snake_box
             }
         }
 
+        public BordersData BordersData
+        {
+            get
+            { 
+                if(_bordersData == null)
+                    _bordersData = Load<BordersData>("Data/" + Instance._bordersDataPath);
+                return _bordersData;
+            }
+        }
+
         public ShellData ShellData
         {
             get
@@ -252,9 +262,26 @@ namespace Snake_box
                 return _shellData;
             }
         }
-        public BordersData BordersData => Load<BordersData>("Data/" + Instance._borderDataPath);
 
-        public AllSpawnListsData AllSpawnListsData => Load<AllSpawnListsData>("Data/" + Instance._allSpawnListsDataPath);
+        public AllSpawnListsData AllSpawnListsData
+        {
+            get
+            {
+                if (_allSpawnListsData == null)
+                    _allSpawnListsData = Load<AllSpawnListsData>("Data/" + Instance._allSpawnListsDataPath);
+                return _allSpawnListsData;
+            }
+        }
+
+        public LevelPrefabs LevelPrefabs
+        {
+            get
+            {
+                if (_levelPrefabs == null)
+                    _levelPrefabs = Load<LevelPrefabs>("Data/" + Instance._levelPrefabsDataPath);
+                return _levelPrefabs;
+            }
+        }
 
         #endregion
 
