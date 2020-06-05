@@ -101,6 +101,20 @@
               <e p="ShakeInfo.cs" t="Include" />
               <e p="ShakesData.cs" t="Include" />
             </e>
+            <e p="Talent" t="Include">
+              <e p="BaseTalentData.cs" t="Include" />
+              <e p="BlockTalentA" t="Include">
+                <e p="BatteringRamDamageTalentData.cs" t="Include" />
+                <e p="CostReductionTalentData.cs" t="Include" />
+                <e p="MaxHpTalentData.cs" t="Include" />
+                <e p="MaxShieldTalentData.cs" t="Include" />
+                <e p="MaxSizeTalentData.cs" t="Include" />
+                <e p="MaxSpeedTalentData.cs" t="Include" />
+                <e p="RepairKitTalentData.cs" t="Include" />
+                <e p="ShieldRegenTalentData.cs" t="Include" />
+              </e>
+              <e p="BlockTalentB" t="Include" />
+            </e>
             <e p="Turret" t="Include">
               <e p="ShellData.cs" t="Include" />
               <e p="TurretData.cs" t="Include" />
