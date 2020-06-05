@@ -1,6 +1,6 @@
 namespace Snake_box
 {
-    public class EndLevelBonus: BaseTalent
+    public class EndLevelBonusTalent: BaseTalent
     {
         public override void Implenet()
         {
