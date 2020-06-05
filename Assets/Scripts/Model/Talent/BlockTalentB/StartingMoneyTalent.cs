@@ -1,6 +1,6 @@
 namespace Snake_box
 {
-    public class StartingMonetTalent : BaseTalent
+    public class StartingMoneyTalent : BaseTalent
     {
         public override void Implenet()
         {

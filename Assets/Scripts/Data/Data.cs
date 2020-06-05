@@ -31,6 +31,19 @@ namespace Snake_box
         [SerializeField] private string _bordersDataPath;
         [SerializeField] private string _allSpawnListsDataPath;
         [SerializeField] private string _levelPrefabsDataPath;
+        [SerializeField] private string _batteringRamTalentDataPath;
+        [SerializeField] private string _costReductionTalentDataPath;
+        [SerializeField] private string _maxHpTalentDataPath;
+        [SerializeField] private string _maxShieldTalentDataPath;
+        [SerializeField] private string _maxSizeTalentDataPath;
+        [SerializeField] private string _maxSpeedTalentDataPath;
+        [SerializeField] private string _repairKitTalentDataPath;
+        [SerializeField] private string _shieldRegenTalentDataPath;
+        [SerializeField] private string _endLevelBonusTalentDataPath;
+        [SerializeField] private string _killBonusTalentDataPath;
+        [SerializeField] private string _startingMoneyTalentDataPath;
+        [SerializeField] private string _waveBonusTalentDataPath;
+
         private static ShakesData _shake;
         private static CharacterData _characterData;
         private static SimpleEnemyData _simpleEnemyData;
@@ -49,6 +62,18 @@ namespace Snake_box
         private static AllSpawnListsData _allSpawnListsData;
         private static ShellData _shellData;
         private static LevelPrefabs _levelPrefabs;
+        private static BatteringRamDamageTalentData _batteringRamDamageTalentData;
+        private static CostReductionTalentData _costReductionTalentData;
+        private static MaxHpTalentData _maxHpTalentData;
+        private static MaxShieldTalentData _maxShieldTalentData;
+        private static MaxSizeTalentData _maxSizeTalentData;
+        private static MaxSpeedTalentData _maxSpeedTalentData;
+        private static RepairKitTalentData _repairKitTalentData;
+        private static ShieldRegenTalentData _shieldRegenTalentData;
+        private static EndLevelBonusTalentData _endLevelBonusTalentData;
+        private static KillBonusTalentData _killBonusTalentData;
+        private static StartingMoneyTalentData _startingMoneyTalentData;
+        private static WaveBonusTalentData _waveBonusTalentData;
         private static readonly Lazy<Data> _instance = new Lazy<Data>(() => Load<Data>("Data/" + typeof(Data).Name));
         
         #endregion
