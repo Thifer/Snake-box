@@ -308,6 +308,166 @@ namespace Snake_box
             }
         }
 
+        public BatteringRamDamageTalentData BatteringRamDamageTalentData
+        {
+            get
+            {
+                if (_batteringRamDamageTalentData==null)
+                {
+                    _batteringRamDamageTalentData =
+                        Load<BatteringRamDamageTalentData>("Data/" + Instance._batteringRamTalentDataPath);
+                }
+
+                return _batteringRamDamageTalentData;
+            }
+        }
+        public CostReductionTalentData CostReductionTalentData
+        {
+            get
+            {
+                if (_costReductionTalentData==null)
+                {
+                    _costReductionTalentData =
+                        Load<CostReductionTalentData>("Data/" + Instance._costReductionTalentDataPath);
+                }
+
+                return _costReductionTalentData;
+            }
+        }
+        public MaxHpTalentData MaxHpTalentData
+        {
+            get
+            {
+                if (_maxHpTalentData==null)
+                {
+                    _maxHpTalentData =
+                        Load<MaxHpTalentData>("Data/" + Instance._maxHpTalentDataPath);
+                }
+
+                return _maxHpTalentData;
+            }
+        }
+        public MaxShieldTalentData MaxShieldTalentData
+        {
+            get
+            {
+                if (_maxShieldTalentData==null)
+                {
+                    _maxShieldTalentData =
+                        Load<MaxShieldTalentData>("Data/" + Instance._maxShieldTalentDataPath);
+                }
+
+                return _maxShieldTalentData;
+            }
+        }
+        public MaxSizeTalentData MaxSizeTalentData
+        {
+            get
+            {
+                if (_maxSizeTalentData==null)
+                {
+                    _maxSizeTalentData =
+                        Load<MaxSizeTalentData>("Data/" + Instance._maxSizeTalentDataPath);
+                }
+
+                return _maxSizeTalentData;
+            }
+        }
+        public MaxSpeedTalentData MaxSpeedTalentData
+        {
+            get
+            {
+                if (_maxSpeedTalentData==null)
+                {
+                    _maxSpeedTalentData =
+                        Load<MaxSpeedTalentData>("Data/" + Instance._maxSpeedTalentDataPath);
+                }
+
+                return _maxSpeedTalentData;
+            }
+        }
+        public RepairKitTalentData RepairKitTalentData
+        {
+            get
+            {
+                if (_repairKitTalentData==null)
+                {
+                    _repairKitTalentData =
+                        Load<RepairKitTalentData>("Data/" + Instance._repairKitTalentDataPath);
+                }
+
+                return _repairKitTalentData;
+            }
+        }
+
+        public ShieldRegenTalentData ShieldRegenTalentData
+        {
+            get
+            {
+                if (_shieldRegenTalentData == null)
+                {
+                    _shieldRegenTalentData = Load<ShieldRegenTalentData>("Data/+" + Instance._shieldRegenTalentDataPath);
+                }
+
+                return _shieldRegenTalentData;
+            }
+        }
+
+        public EndLevelBonusTalentData EndLevelBonusTalentData
+        {
+            get
+            {
+                if (_endLevelBonusTalentData == null)
+                {
+                    _endLevelBonusTalentData = Load<EndLevelBonusTalentData>("Data/+" + Instance._endLevelBonusTalentDataPath);
+                }
+
+                return _endLevelBonusTalentData;
+            }
+        }
+
+        public KillBonusTalentData KillBonusTalentData
+        {
+            get
+            {
+                if (_killBonusTalentData == null)
+                {
+                    _killBonusTalentData = Load<KillBonusTalentData>("Data/+" + Instance._killBonusTalentDataPath);
+                }
+
+                return _killBonusTalentData;
+            }
+        }
+
+        public StartingMoneyTalentData StartingMoneyTalentData
+        {
+            get
+            {
+                if (_startingMoneyTalentData == null)
+                {
+                    _startingMoneyTalentData = Load<StartingMoneyTalentData>("Data/+" + Instance._startingMoneyTalentDataPath);
+                }
+
+                return _startingMoneyTalentData;
+            }
+        }
+
+        public WaveBonusTalentData WaveBonusTalentData
+        {
+            get
+            {
+                if (_waveBonusTalentData == null)
+                {
+                    _waveBonusTalentData = Load<WaveBonusTalentData>("Data/+" + Instance._waveBonusTalentDataPath);
+                }
+
+                return _waveBonusTalentData;
+            }
+        }
+
+
+
+
         #endregion
 
 
