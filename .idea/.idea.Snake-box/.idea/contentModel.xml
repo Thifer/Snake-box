@@ -189,6 +189,12 @@
                 <e p="RepairKitTalent.cs" t="Include" />
                 <e p="ShieldRegenTalent.cs" t="Include" />
               </e>
+              <e p="BlockTalentB" t="Include">
+                <e p="EndLevelBonus.cs" t="Include" />
+                <e p="KillBonusTalent.cs" t="Include" />
+                <e p="StartingMonetTalent.cs" t="Include" />
+                <e p="WaveBonusTalent.cs" t="Include" />
+              </e>
             </e>
             <e p="Turrets" t="Include">
               <e p="ArmorTypes.cs" t="Include" />
