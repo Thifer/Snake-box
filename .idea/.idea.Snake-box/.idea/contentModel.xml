@@ -175,6 +175,20 @@
             </e>
             <e p="Interfaces" t="Include">
               <e p="IEnemy.cs" t="Include" />
+              <e p="ITalent.cs" t="Include" />
+            </e>
+            <e p="Talent" t="Include">
+              <e p="BaseTalent.cs" t="Include" />
+              <e p="BlockTalentA" t="Include">
+                <e p="BatteringRamDamageTalent.cs" t="Include" />
+                <e p="CostReductionTalent.cs" t="Include" />
+                <e p="MaxHpTalent.cs" t="Include" />
+                <e p="MaxShieldTalent.cs" t="Include" />
+                <e p="MaxSizeTalent.cs" t="Include" />
+                <e p="MaxSpeedTalent.cs" t="Include" />
+                <e p="RepairKitTalent.cs" t="Include" />
+                <e p="ShieldRegenTalent.cs" t="Include" />
+              </e>
             </e>
             <e p="Turrets" t="Include">
               <e p="ArmorTypes.cs" t="Include" />
