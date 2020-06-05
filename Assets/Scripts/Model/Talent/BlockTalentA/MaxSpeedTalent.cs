@@ -1,7 +1,10 @@
-namespace Snake_box.BlockTalentA
+namespace Snake_box
 {
-    public class MaxSpeedTalent
+    public class MaxSpeedTalent : BaseTalent
     {
-        
+        public override void Implenet()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
