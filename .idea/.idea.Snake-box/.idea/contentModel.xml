@@ -116,7 +116,7 @@
               <e p="BlockTalentB" t="Include">
                 <e p="EndLevelBonusTalentData.cs" t="Include" />
                 <e p="KillBonusTalentData.cs" t="Include" />
-                <e p="StartingMoneyTalent.cs" t="Include" />
+                <e p="StartingMoneyTalentData.cs" t="Include" />
                 <e p="WaveBonusTalentData.cs" t="Include" />
               </e>
             </e>
@@ -211,7 +211,7 @@
               <e p="BlockTalentB" t="Include">
                 <e p="EndLevelBonusTalent.cs" t="Include" />
                 <e p="KillBonusTalent.cs" t="Include" />
-                <e p="StartingMonetTalent.cs" t="Include" />
+                <e p="StartingMoneyTalent.cs" t="Include" />
                 <e p="WaveBonusTalent.cs" t="Include" />
               </e>
             </e>
