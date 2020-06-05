@@ -112,7 +112,14 @@ namespace Snake_box
                     if (colliders[i].CompareTag(TagManager.GetTag(TagType.Target)))
                     {
                         var mainBuilding = colliders[i].GetComponent<MainBuild>();
-                        mainBuilding.GetDamage(_damage);
+                        mainBuilding.GetDamage();
+                        if (_levelService.ActiveEnemies.Contains(this))
+                            _levelService.ActiveEnemies.Remove(this);
+                        Object.Destroy(_enemyObject);
+                        if (_levelService.ActiveEnemies.Count == 0 && Services.Instance.LevelService.IsLevelSpawnEnded)
+                        {
+                            _levelService.EndLevel();
+                        }
                     }
                     else if (colliders[i].CompareTag(TagManager.GetTag(TagType.Player)))
                     {
